@@ -18,7 +18,7 @@ function LoginPage(props) {
   const handlerLogin = () => {
     setLoading(true);
     const getListUser = JSON.parse(localStorage.getItem('listUser'));
-    const dataUserLogin = getListUser.find(record => record.email === methods.getValues('email'));
+    const dataUserLogin = getListUser?.find(record => record.email === methods.getValues('email'));
 
     if (dataUserLogin?.password === methods.getValues('password')) {
       SaveUserLogged(dataUserLogin);
