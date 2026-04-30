@@ -21,9 +21,7 @@ function App() {
     function fetchUserLogged() {
       setLoading(true);
 
-      console.log('check awal')
       setRole(prev => ({ ...prev, role: GetUserLogged() }));
-      console.log('check akhir')
 
       setInitializing(false);
       setLoading(false);
