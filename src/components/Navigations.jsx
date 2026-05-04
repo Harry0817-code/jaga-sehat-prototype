@@ -30,7 +30,7 @@ function Navigations(props) {
   }
 
   return (
-    <>
+    <nav>
       <div className="logo-header">
         <Link to="/">
           <span><HeartHandshake style={{ width: '1.8rem', height: '1.8rem' }} /></span>
@@ -47,7 +47,7 @@ function Navigations(props) {
           </div>
         }
       </div>
-    </>
+    </nav>
   );
 }
 
